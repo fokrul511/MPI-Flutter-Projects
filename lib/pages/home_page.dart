@@ -4,7 +4,6 @@ import 'package:pactics_1/Container/Teachers.dart';
 import 'package:pactics_1/Container/about_pages.dart';
 import 'package:pactics_1/Container/bteb_notice.dart';
 import 'package:pactics_1/Container/collage_notice.dart';
-import 'package:pactics_1/Container/gallery.dart';
 import 'package:pactics_1/Container/job.dart';
 import 'package:pactics_1/Container/staffs/staffs_list.dart';
 import 'package:pactics_1/Container/team.dart';
@@ -44,12 +43,14 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             children: [
               const SliderL(),
-             const SizedBox(height: 10,),
+
               Expanded(
                 child: ListView(
                   shrinkWrap: true,
                   children: [
-
+                    const SizedBox(
+                      height: 10,
+                    ),
                     ElevatedButton(
                       style: buttonStyle,
                       onPressed: () {
@@ -93,12 +94,7 @@ class _HomePageState extends State<HomePage> {
                     ElevatedButton(
                       style: buttonStyle,
                       onPressed: () {
-                        print('Gallery');
-                        Navigator.of(context).push(
-                          CupertinoPageRoute(
-                            builder: (context) => const Gallery(),
-                          ),
-                        );
+
                       },
                       child: const Text(
                         'Gallery',
