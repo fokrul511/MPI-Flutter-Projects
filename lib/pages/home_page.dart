@@ -9,7 +9,6 @@ import 'package:pactics_1/Container/job.dart';
 import 'package:pactics_1/Container/staffs/staffs_list.dart';
 import 'package:pactics_1/Container/team.dart';
 import 'package:pactics_1/pages/dawer.dart';
-// import 'package:pactics_1/pages/information_screen.dart';
 import 'package:pactics_1/pages/slide_screen.dart';
 import 'package:url_launcher/url_launcher.dart'
     as luncher; // import 'package:pactics_1/pages/slide_screen.dart';
@@ -22,8 +21,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  bool _valu = false;
-  // static const bteb = 'http://www.bteb.gov.bd/';
+
 
   @override
   Widget build(BuildContext context) {
@@ -33,35 +31,9 @@ class _HomePageState extends State<HomePage> {
       ),
     );
     return Scaffold(
-      backgroundColor: _valu == false ? Colors.white : Colors.black,
+
       appBar: AppBar(
         title: const Text('Home'),
-        actions: [
-          Row(
-            children: [
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.light_mode,
-                ),
-              ),
-              Switch(
-                  activeColor: Colors.black,
-                  value: _valu,
-                  onChanged: (val) {
-                    setState(() {
-                      _valu = val;
-                    });
-                  }),
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.nightlight_round,
-                ),
-              ),
-            ],
-          )
-        ],
       ),
       drawer: const SafeArea(
         child: drawer(),
@@ -71,22 +43,13 @@ class _HomePageState extends State<HomePage> {
           padding: const EdgeInsets.all(10.0),
           child: Column(
             children: [
-              Container(
-                height: 210.0,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  color: Colors.black26,
-                  borderRadius: BorderRadius.circular(30.0),
-                ),
-                child: const SliderScreen(),
-              ),
+              const SliderL(),
+             const SizedBox(height: 10,),
               Expanded(
                 child: ListView(
                   shrinkWrap: true,
                   children: [
-                    const SizedBox(
-                      height: 10,
-                    ),
+
                     ElevatedButton(
                       style: buttonStyle,
                       onPressed: () {
