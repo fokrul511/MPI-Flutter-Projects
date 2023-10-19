@@ -36,8 +36,8 @@ class _PrincipalState extends State<Principal> {
           Center(
             child: CircleAvatar(
               maxRadius: 80.0,
-              backgroundImage: AssetImage(
-                'assets/images/principal.png',
+              backgroundImage: NetworkImage(
+                'https://file.portal.gov.bd/files/mpi.moulvibazar.gov.bd/officer_list/eacc1c00_f44a_43e3_a99e_90361b8da41e/5e0bcf43a88020f4cc8420cdc1c3206d.png',
               ),
             ),
           ),
@@ -65,15 +65,6 @@ class _PrincipalState extends State<Principal> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // CircleAvatar(
-                //   backgroundColor: Colors.redAccent,
-                //   maxRadius: 30.0,
-                //   child: Icon(
-                //     Icons.email,
-                //     color: Colors.white,
-                //     size: 40.0,
-                //   ),
-                // ),
                 ElevatedButton(
                   onPressed: () {
                     // FlutterPhoneDirectCaller.callNumber('+8801875091001');
@@ -88,16 +79,6 @@ class _PrincipalState extends State<Principal> {
                 SizedBox(
                   width: 80.0,
                 ),
-                // CircleAvatar(
-                //   backgroundColor: Colors.redAccent,
-                //   maxRadius: 30.0,
-                //   child: Icon(
-                //     Icons.call,
-                //     color: Colors.white,
-                //     size: 40.0,
-                //   ),
-                // ),
-
                 ElevatedButton(
                   onPressed: () {
                     // launchUrl('moulvibazarpolytechnic@gmail.com' as Uri);
@@ -116,25 +97,3 @@ class _PrincipalState extends State<Principal> {
     );
   }
 }
-
-
-
-
-// ElevatedButton(
-//                   onPressed: () async {
-//                     String email =
-//                         Uri.encodeComponent("moulvibazarpolytechnic@gmail.com");
-//                     String subject = Uri.encodeComponent("Hello sir");
-//                     String body =
-//                         Uri.encodeComponent("Hi! I'm Flutter Developer");
-//                     print(subject); //output: Hello%20Flutter
-//                     Uri mail =
-//                         Uri.parse("mailto:$email?subject=$subject&body=$body");
-//                     if (await launchUrl(mail)) {
-//                       //email app opened
-//                     } else {
-//                       //email app is not opened
-//                     }
-//                   },
-//                   child: Icon(Icons.email),
-//                 )

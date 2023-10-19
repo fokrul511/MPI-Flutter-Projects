@@ -22,7 +22,7 @@ class SliderL extends StatelessWidget {
               ),
               child: Stack(
                 children: [
-                  Image.asset(
+                  Image.network(
                     e,
                     fit: BoxFit.cover,
                     width: 1050.0,
