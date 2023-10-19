@@ -26,7 +26,8 @@ class AboutPages extends StatelessWidget {
               const SizedBox(
                 height: 20.0,
               ),
-              Image.asset('assets/images/clg.png'),
+              Image.network(
+                  'https://dailydeshtottoh.com/wp-content/uploads/2023/09/11.-3.jpg'),
               const SizedBox(
                 height: 20.0,
               ),

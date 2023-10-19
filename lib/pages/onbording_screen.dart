@@ -19,36 +19,15 @@ class _OnbordingScreenState extends State<OnbordingScreen> {
           decoration: PageDecoration(imageFlex: 1),
           title: 'Demo Text',
           body: 'this is body',
-          image: Image.asset(
-            'assets/images/MPI (1).jpg',
+          image: Image.network(
+            'https://dailydeshtottoh.com/wp-content/uploads/2023/09/11.-3.jpg',
           ),
         ),
         PageViewModel(
           title: 'Demo Text',
           body: 'this is body',
-          image: Image.asset(
-            'assets/images/MPI (2).jpg',
-          ),
-        ),
-        PageViewModel(
-          title: 'Demo Text',
-          body: 'this is body',
-          image: Image.asset(
-            'assets/images/MPI (5).jpg',
-          ),
-        ),
-        PageViewModel(
-          title: 'Demo Text',
-          body: 'this is body',
-          image: Image.asset(
-            'assets/images/MPI (3).jpg',
-          ),
-        ),
-        PageViewModel(
-          title: 'Demo Text',
-          body: 'this is body',
-          image: Image.asset(
-            'assets/images/MPI (4).jpg',
+          image: Image.network(
+            'https://polytechnicbd.com/wp-content/uploads/2020/01/m-aca2.jpg',
           ),
         ),
       ],

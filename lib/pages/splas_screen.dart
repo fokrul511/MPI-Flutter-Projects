@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:pactics_1/pages/home_page.dart';
 import 'package:pactics_1/pages/onbording_screen.dart';
 
 class SplasScreen extends StatefulWidget {
