@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:pactics_1/pages/home_page.dart';
+import 'package:pactics_1/pages/onbording_screen.dart';
 
-class OnbordingScreen extends StatefulWidget {
-  const OnbordingScreen({super.key});
+class SplasScreen extends StatefulWidget {
+  const SplasScreen({super.key});
 
   @override
-  State<OnbordingScreen> createState() => _OnbordingScreenState();
+  State<SplasScreen> createState() => _SplasScreenState();
 }
 
-class _OnbordingScreenState extends State<OnbordingScreen>
+class _SplasScreenState extends State<SplasScreen>
     with SingleTickerProviderStateMixin {
   @override
   void initState() {
@@ -19,7 +19,7 @@ class _OnbordingScreenState extends State<OnbordingScreen>
     Future.delayed(const Duration(seconds: 2), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (_) => const HomePage(),
+          builder: (_) => const OnbordingScreen(),
         ),
       );
     });
